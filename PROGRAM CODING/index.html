@@ -9,6 +9,8 @@
             font-family: Arial, sans-serif; 
             margin: 0;
             padding: 0;
+            border: 1px solid black;
+            max-width: 100%;
         }
 
         h2 { 
@@ -28,6 +30,7 @@
             width: 100%; 
             margin: auto; 
             padding: 20px; 
+            border: 1px solid black;
         }
 
         input { 
@@ -88,6 +91,12 @@
         @media print {
             .print-btn {
                 display: none;
+            }
+            .container {
+                border: none;
+            }
+            body {
+                border: none;
             }
         }
 
@@ -167,12 +176,6 @@
                     alert("Some fields are still empty! Please complete them before printing.");
                 }
             });
-
-             // Hide print button when printing via Ctrl + P
-                window.addEventListener("afterprint", function () {
-                document.querySelector(".print-btn").style.display = "block"; // Restore button after printing
-            });
-
 
             window.print();
         }
