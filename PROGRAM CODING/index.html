@@ -7,7 +7,7 @@
     <style>
         body { 
             font-family: Arial, sans-serif; 
-            margin: 0; /* Remove default body margin */
+            margin: 0;
             padding: 0;
         }
 
@@ -30,11 +30,6 @@
             padding: 20px; 
         }
 
-        table { 
-            width: 50%; 
-            border-collapse: collapse; 
-        }
-
         input { 
             border: none; 
             border-bottom: 1px solid black; 
@@ -49,24 +44,55 @@
         }
 
         @page {
-            size: 8.5in 14in; /* Set paper size to legal */
-            margin-top: 0mm; /* Remove top margin */
-            margin-left: 20mm; /* Set left margin */
-            margin-right: 20mm; /* Set right margin */
-            margin-bottom: 20mm; /* Set bottom margin */
+            size: 8.5in 14in;
+            margin-top: 5mm;
+            margin-left: 30mm;
+            margin-right: 30mm;
+            margin-bottom: 20mm;
         }
 
-        /* Header image styling */
         header {
             width: 100%;
-            margin-top: 0; /* Remove any margin above the header */
-            padding: 0; /* Remove padding around the header */
+            margin-top: 0;
+            padding: 0;
         }
 
         header img {
-            width: 100%; /* Make the image span the full width of the page */
-            height: auto; /* Keep aspect ratio intact */
-            object-fit: cover; /* Ensure it covers the header area */
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .pass {
+            padding: 20px;
+            margin-top: 20px;
+            margin-left: -5mm;
+            margin-right: 5mm;
+        }
+
+        .print-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .print-btn:hover {
+            background-color: #0056b3;
+        }
+        @media print {
+            .print-btn {
+                display: none;
+            }
+        }
+
+        .required{
+            text-align: center;
         }
     </style>
 </head>
@@ -74,37 +100,82 @@
     <header>
         <img src="header.png" alt="Header Image">
     </header>
+    <br>
     <div class="container">
         <h2>CO-MAKER STATEMENT</h2>
-        <br>
+    
         <div class="pass">
             <p style="text-align: justify; font-style: normal; text-indent: 50px;">
-                We,<input type="text" style="text-align: center; width: 25%;">/<input type="text" style="text-align: center; width: 25%;">, of legal age, Filipino, and a resident of<input type="text" style="text-align: center; width: 40%;">and<input type="text" style="text-align: center; width: 40%;">, respectively, do hereby agree to be co-makers of<input type="text" style="text-align: center;">for the Promissory Note granted by <strong>Bicutan Medical Center, Inc. (BMCI)</strong>, New Lower Bicutan, Taguig City in amount of<input type="text" style="text-align: center; width: 48%">(Php<input type="text" style="text-align: center; width: 10%">)
+                We, <input type="text" class="required"> / <input type="text" class="required">, 
+                of legal age, Filipino, and a resident of <input type="text" class="required"> and <input type="text" class="required">, 
+                respectively, do hereby agree to be co-makers of <input type="text" class="required"> for the Promissory Note granted by 
+                <strong>Bicutan Medical Center, Inc. (BMCI)</strong>, New Lower Bicutan, Taguig City in amount of
+                <input type="text" class="required" style="width: 48%"> (Php <input type="text" class="required" style="width: 10%">).
             </p>
             <p style="text-align: justify; font-style: normal; text-indent: 50px;">
-                That being the co-makers, we hereby bind ourselves to assume the obligation in case the borrower will not pay or fails to pay on time his/her promissory note to BMCI. We further assure to assume <strong>FULL RESPONSIBILITY</strong> in paying full moment in case the borrower will transfer residence or nowhere to find.
+                That being the co-makers, we hereby bind ourselves to assume the obligation in case the borrower will not pay or fails to pay on time his/her promissory note to BMCI. 
+                We further assure to assume <strong>FULL RESPONSIBILITY</strong> in paying full moment in case the borrower will transfer residence or nowhere to find.
             </p>
             <p style="text-align: justify; font-style: normal; text-indent: 50px;"> 
-                In witness whereof, we have hereunto fixed our signatures this<input type="text" style="text-align: center; width: 5%;">day of<input type="text" style="text-align: center; width: 10%;">20<input type="text" style="text-align: center; width: 5%;">at<input type="text" style="text-align: center; width: 30%;">, Taguig City.</p>
+                In witness whereof, we have hereunto fixed our signatures this <input type="text" class="required" style="width: 5%;">
+                day of <input type="text" class="required" style="width: 10%;"> 20<input type="text" class="required" style="width: 5%;">
+                at <input type="text" class="required" style="width: 30%;">, Taguig City.
+            </p>
            <br>
-           <p style="text-align: right; margin-bottom: -15px"><input type="text" style="text-align: center;"></p>
+           <p style="text-align: right; margin-bottom: -15px"><input type="text" class="required"></p>
             <p style="text-align: right; font-style: normal; margin-bottom: -15px">Signature over Printed Name</p>
-            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Valid ID:</strong> <input type="text" style="text-align: center;"></p>
-            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Issued on:</strong> <input type="text" style="text-align: center;"></p>
-            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Issued at:</strong> <input type="text" style="text-align: center;"></p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Valid ID:</strong> <input type="text" class="required"></p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Issued on:</strong> <input type="text" class="required"></p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Issued at:</strong> <input type="text" class="required"></p>
             <br>
             <br>
-            <p style="text-align: right; margin-bottom: -15px"><input type="text" style="text-align: center;"></p>
+            <p style="text-align: right; margin-bottom: -15px"><input type="text" class="required"></p>
             <p style="text-align: right; font-style: normal; margin-bottom: -15px">Signature over Printed Name</p>
-            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Valid ID:</strong> <input type="text" style="text-align: center;"></p>
-            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Issued on:</strong> <input type="text" style="text-align: center;"></p>
-            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Issued at:</strong> <input type="text" style="text-align: center;"></p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Valid ID:</strong> <input type="text" class="required"></p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Issued on:</strong> <input type="text" class="required"></p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Issued at:</strong> <input type="text" class="required"></p>
             <br>
             <br>
             <p style="font-style: normal;"><strong>Witnessed by:</strong></p>
-            <p><input type="text" style="text-align: center; margin-bottom: -15px"></p>
+            <p><input type="text" class="required" style="text-align: center; margin-bottom: -15px"></p>
             <p style="text-align: left; font-style: normal; margin-top: -15px">Signature over Printed Name</p>
         </div>
     </div>
+
+    <button class="print-btn" onclick="checkAndPrint()">Print Document</button>
+
+    <script>
+        function checkAndPrint() {
+            let inputs = document.querySelectorAll(".required");
+            let emptyFields = [];
+
+            inputs.forEach((input, index) => {
+                if (!input.value.trim()) {
+                    emptyFields.push(index + 1); // Track empty fields
+                }
+            });
+
+            if (emptyFields.length > 0) {
+                let confirmPrint = confirm("Some fields are still empty. Do you want to proceed with printing?");
+                if (!confirmPrint) {
+                    return;
+                }
+            }
+
+            window.addEventListener("beforeprint", function () {
+                if (checkEmptyFields()) {
+                    alert("Some fields are still empty! Please complete them before printing.");
+                }
+            });
+
+             // Hide print button when printing via Ctrl + P
+                window.addEventListener("afterprint", function () {
+                document.querySelector(".print-btn").style.display = "block"; // Restore button after printing
+            });
+
+
+            window.print();
+        }
+    </script>
 </body>
 </html>
