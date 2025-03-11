@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 2550px;
+            max-height: 3300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        .question {
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        .blank-input {
+            border: none;
+            border-bottom: 1px solid #000;
+            width: 100px;
+            font-size: inherit;
+            font-family: inherit;
+            outline: none;
+        }
+        .blank-inputt {
+            border: none;
+            border-bottom: 1px solid #000;
+            width: 150px;
+            font-size: 15px;
+            font-family: inherit;
+            outline: none;
+        }
+        .print-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        h2, h4{
+            text-align: center;
+            margin-bottom: -15px;
+            font-size: 15px;
+        }
+        h4{
+            font-family: "Playfair Display", "Libre Bodoni", "Didot", serif;
+            font-style: italic;
+        }
+        h2{
+            font-family: "Lora", "Merriweather", "Palatino Linotype", "Book Antiqua", serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>OFFICE OF THE MAYOR</h2>
+        <h4>City of Manila</h4>
+        <h2>DEPARTMENT OF SOCIAL WELFARE</h2>
+        <h4>District Welfare Office II</h4>
+        <br>
+        <h2>SOCIAL CASE STUDY REPORT</h2>
+
+        <h4><input type="text" class="blank-input"></span>, 2010</h4>
+        <div class="question">
+            <br>
+            I.    IDENTIFYING DATA:
+        </div>
+        <div class="question">
+            A. The Client: <br>
+            Name: <input type="text" class="blank-input"> Date of Birth: <input type="text" class="blank-input">Age: <input type="text" class="blank-input">Sex: <input type="text" class="blank-input">
+            Civil Status: <input type="text" class="blank-input"> Birth Place: <input type="text" class="blank-input"> Address: <input type="text" class="blank-input"> Religion: <input type="text" class="blank-input">
+            Educational Attainment: <input type="text" class="blank-input"><br> Occupation: <input type="text" class="blank-input"> 
+        </div><br>
+        <br>
+        II.   FAMILY COMPOSITION:
+        <br>
+        <div class="question">
+            <div class="table-container">
+                <table>
+                    <tr> <p>Member of the Family</p>
+                        <td><input type="text" class="blank-inputt" style="width: 90%;"></td>
+                        <p>age</p>
+                        <td><input type="text" class="blank-inputt" style="width: 20%; margin-left: 10px"></td>
+                        <p>relationship</p>
+                        <td><input type="text" class="blank-inputt" style="margin-left: -50px;"></td>
+                        <p>Educational Attainment</p>
+                        <td><input type="text" class="blank-inputt"></td>
+                        <p>Occupation</p> 
+                        <td><input type="text" class="blank-inputt"></td>
+                    </tr>
+                    <tr> 
+                        <td><input type="text" class="blank-inputt" style="width: 90%;"></td>
+                        <td><input type="text" class="blank-inputt" style="width: 20%; margin-left: 10px"></td>
+                        <td><input type="text" class="blank-inputt" style="margin-left: -50px;"></td>
+                        <td><input type="text" class="blank-inputt"></td>
+                        <td><input type="text" class="blank-inputt"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="blank-inputt" style="width: 90%;"></td>
+                        <td><input type="text" class="blank-inputt" style="width: 20%; margin-left: 10px;"></td>
+                        <td><input type="text" class="blank-inputt" style="margin-left: -50px;"></td>
+                        <td><input type="text" class="blank-inputt"></td>
+                        <td><input type="text" class="blank-inputt"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="blank-inputt" style="width: 90%;"></td>
+                        <td><input type="text" class="blank-inputt" style="width: 20%; margin-left: 10px"></td>
+                        <td><input type="text" class="blank-inputt" style="margin-left: -50px;"></td>
+                        <td><input type="text" class="blank-inputt"></td>
+                        <td><input type="text" class="blank-inputt"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="blank-inputt" style="width: 90%;"></td>
+                        <td><input type="text" class="blank-inputt" style="width: 20%; margin-left: 10px"></td>
+                        <td><input type="text" class="blank-inputt" style="margin-left: -50px;"></td>
+                        <td><input type="text" class="blank-inputt"></td>
+                        <td><input type="text" class="blank-inputt"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="question">
+            4. The speed of light is approximately <span class="blank"></span> km/s.
+        </div>
+        <div class="question">
+            5. The human body has <span class="blank"></span> bones.
+        </div>
+        
+        <button class="print-button" onclick="window.print()">Print</button>
+    </div>
+</body>
+</html>

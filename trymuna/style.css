@@ -1,0 +1,91 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 40px; 
+}
+h2, h3 { 
+    text-align: center; 
+    margin-bottom: -15px;
+}
+h2{
+    font-family: "Playfair Display", "Libre Bodoni", "Didot", serif;
+}
+li{
+    font-family: "Lora", "Merriweather", "Palatino Linotype", "Book Antiqua", serif;
+    font-size: 20px;
+}
+h3, p{
+    font-size: medium;
+    font-family: "Lora", "Merriweather", "Palatino Linotype", "Book Antiqua", serif;
+    font-style: italic;
+}
+nav {  
+    margin-top: 10px; 
+}
+img { 
+    display: block; 
+    margin-left: 5%; 
+    margin-right: auto; 
+    width: 7%; 
+}
+.container { 
+    width: 100%; 
+    margin: auto; 
+    padding: 20px; 
+    margin-top: -50px; 
+}
+table { 
+    width: 50%; 
+    border-collapse: collapse; 
+}
+th, td { 
+    padding: 8px; 
+    text-align: left; 
+    font-family: "Lora", "Merriweather", "Palatino Linotype", "Book Antiqua", serif;
+}
+input { 
+    border: none; 
+    border-bottom: 1px solid black; 
+    width: 200px; 
+    font-size: 16px; 
+    display: inline-block;
+    text-align: justify;
+}
+.wide-input { 
+    width: 70%; 
+}
+.pass{
+    margin-right: auto;
+}
+.muna{
+    margin-right: 5%;
+    text-align: justify;
+}
+.siguro{
+    align-content: center;
+} 
+.sige{
+    margin-bottom: auto;
+}
+hr{
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 90%;
+}
+@page {
+    size: auto;
+    margin: 15mm;
+}
+
+@media print {
+    .page {
+        page-break-before: always; /* Forces a new page */
+        margin-top: 5%;
+    }
+}
+
+@media print {
+    input {
+        border: none; /* Remove borders */
+        outline: none;
+    }
+}
